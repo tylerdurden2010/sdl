@@ -94,9 +94,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/f898453a/gridview/jquery.yiigridview.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

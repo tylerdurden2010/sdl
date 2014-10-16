@@ -18,6 +18,7 @@ $this->menu=array(
 
 );
 
+
 ?>
 
 <h1>View Project :<?php echo $model->ProjectName; ?></h1>
