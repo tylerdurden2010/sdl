@@ -8,8 +8,9 @@
  * @property string $Step
  * @property string $ProjectID
  * @property integer $UserID
+ * @property string $UpdateTime
  */
-class OptProject extends CActiveRecord
+class TableProject extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -30,10 +31,10 @@ class OptProject extends CActiveRecord
 			array('UserID', 'numerical', 'integerOnly'=>true),
 			array('ProjectName', 'length', 'max'=>2000),
 			array('Step', 'length', 'max'=>10),
+			array('UpdateTime', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ProjectName, Step, UserID', 'safe', 'on'=>'search'),
-			array('ProjectName','required'),
+			array('ProjectName, Step, ProjectID, UserID, UpdateTime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,8 +46,6 @@ class OptProject extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'issues' => array(self::HAS_MANY, 'Issue','project_id'),
-			'users' => array(self::HAS_MANY,'User','Project_User'),
 		);
 	}
 
@@ -57,9 +56,10 @@ class OptProject extends CActiveRecord
 	{
 		return array(
 			'ProjectName' => 'Project Name',
-			//'Step' => 'Step',
+			'Step' => 'Step',
 			'ProjectID' => 'Project',
 			'UserID' => 'User',
+			'UpdateTime' => 'Update Time',
 		);
 	}
 
@@ -82,9 +82,10 @@ class OptProject extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ProjectName',$this->ProjectName,true);
-		//$criteria->compare('Step',$this->Step,true);
+		$criteria->compare('Step',$this->Step,true);
 		$criteria->compare('ProjectID',$this->ProjectID,true);
 		$criteria->compare('UserID',$this->UserID);
+		$criteria->compare('UpdateTime',$this->UpdateTime,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -95,7 +96,7 @@ class OptProject extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return OptProject the static model class
+	 * @return TableProject the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

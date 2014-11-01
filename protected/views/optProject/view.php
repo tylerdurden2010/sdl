@@ -15,6 +15,7 @@ $this->menu=array(
 	array('label'=>'Update OptProject', 'url'=>array('update', 'id'=>$model->ProjectID),'itemOptions'=>array('role'=>'presentation'),),
 	array('label'=>'Delete OptProject', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ProjectID),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage OptProject', 'url'=>array('admin')),
+	array('label'=>'Create issue','url'=>array('issue/create','pid'=>$model->id)),
 
 );
 
