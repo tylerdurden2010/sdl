@@ -1,0 +1,9 @@
+2014/11/02 12:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/sdl/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sdl/index.php?r=user/admin
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=user/create
+---
