@@ -1148,3 +1148,1522 @@ in /var/www/html/sdl/index.php (13)
 2014/11/10 10:54:17 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
 in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
 in /var/www/html/sdl/index.php (13)
+2014/11/10 15:44:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/admi...')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/admin
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 15:49:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/admi...')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/admin
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 15:50:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/admi...')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/admin
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 17:46:30 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.tinymce.ETinyMce" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SecRequireController), 'application.ext...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/html/sdl/protected/views/secRequire/_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#7 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#24 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/html/sdl/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 17:47:19 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.tinymce.ETinyMce" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SecRequireController), 'application.ext...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/html/sdl/protected/views/secRequire/_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#7 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#24 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/html/sdl/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 17:56:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sdlprocess`.`Require`, CONSTRAINT `FK_Project` FOREIGN KEY (`ProjectID`) REFERENCES `Project` (`projectid`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `Require` (`requirename`, `requirecontent`, `requirefinish`, `projectid`, `securitycontent`, `securityfinish`, `createtime`, `updatetime`, `finishiedtime`, `requirecertain`, `securitycertian`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10).
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (73)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 17:56:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sdlprocess`.`Require`, CONSTRAINT `FK_Project` FOREIGN KEY (`ProjectID`) REFERENCES `Project` (`projectid`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `Require` (`requirename`, `requirecontent`, `requirefinish`, `projectid`, `securitycontent`, `securityfinish`, `createtime`, `updatetime`, `finishiedtime`, `requirecertain`, `securitycertian`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10)' in /var/www/html/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(73): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 17:56:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sdlprocess`.`Require`, CONSTRAINT `FK_Project` FOREIGN KEY (`ProjectID`) REFERENCES `Project` (`projectid`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `Require` (`requirename`, `requirecontent`, `requirefinish`, `projectid`, `securitycontent`, `securityfinish`, `createtime`, `updatetime`, `finishiedtime`, `requirecertain`, `securitycertian`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10).
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (73)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 17:56:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sdlprocess`.`Require`, CONSTRAINT `FK_Project` FOREIGN KEY (`ProjectID`) REFERENCES `Project` (`projectid`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `Require` (`requirename`, `requirecontent`, `requirefinish`, `projectid`, `securitycontent`, `securityfinish`, `createtime`, `updatetime`, `finishiedtime`, `requirecertain`, `securitycertian`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10)' in /var/www/html/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(73): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 18:12:12 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '4', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('4')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('4')
+#4 [internal function]: SecRequireController->actionView('4')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=4
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 18:12:38 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire._userlist" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('_userlist')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('_userlist')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1905): CHtml::resolveValue(Object(SecRequire), '_userlist')
+#3 /var/www/html/yii/framework/web/widgets/CActiveForm.php(879): CHtml::activeCheckBoxList(Object(SecRequire), '_userlist', Array, Array)
+#4 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->checkBoxList(Object(SecRequire), '_userlist', Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#8 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#25 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /var/www/html/sdl/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 18:14:56 [error] [exception.CException] exception 'CException' with message 'SecRequire and its behaviors do not have a method or closure named "getAllUsers".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getAllUsers', Array)
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveRecord->__call('getAllUsers', Array)
+#2 /var/www/html/sdl/protected/views/secRequire/_form.php(47): SecRequire->getAllUsers()
+#3 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#6 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#7 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#13 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#23 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/html/sdl/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 18:29:43 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /var/www/html/sdl/protected/views/secRequire/_form.php(47): SecRequire->getAllProjects()
+#1 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#4 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#7 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#8 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#9 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/models/SecRequire.php (89)
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+2014/11/10 19:10:05 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "activeRadioButtonList".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CComponent->__call('activeRadioButt...', Array)
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->activeRadioButtonList(Object(SecRequire), 'projectid', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:11:27 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/sdl/protected/views/secRequire/_form.php(47): activeRadioButtonList()
+#1 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#4 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#7 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#8 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#9 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:26:18 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:26:53 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:28:14 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:28:23 [error] [php] Invalid argument supplied for foreach() (/var/www/html/yii/framework/web/helpers/CHtml.php:1162)
+Stack trace:
+#0 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#1 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#4 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#7 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#8 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#9 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:28:24 [error] [php] Invalid argument supplied for foreach() (/var/www/html/yii/framework/web/helpers/CHtml.php:1162)
+Stack trace:
+#0 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#1 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#4 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#7 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#8 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#9 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:28:42 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:33:12 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:33:14 [error] [php] strcmp() expects parameter 2 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:1164)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CActiveForm.php(895): activeRadioButtonList()
+#1 /var/www/html/sdl/protected/views/secRequire/_form.php(47): CActiveForm->radioButtonList()
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#5 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#10 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): SecRequireController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (47)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (79)
+2014/11/10 19:34:24 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '5', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('5')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('5')
+#4 [internal function]: SecRequireController->actionView('5')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=5
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:35:17 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '6', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('6')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('6')
+#4 [internal function]: SecRequireController->actionView('6')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=6
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:35:29 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '6', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('6')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('6')
+#4 [internal function]: SecRequireController->actionView('6')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=6
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:36:08 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '6', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('6')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('6')
+#4 [internal function]: SecRequireController->actionView('6')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=6
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:36:09 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '6', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('6')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('6')
+#4 [internal function]: SecRequireController->actionView('6')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=6
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/10 19:43:34 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "requireid" is not supplied when querying the table "Require".' in /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php:813
+Stack trace:
+#0 /var/www/html/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1485): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '6', '', Array, '`t`.')
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(155): CActiveRecord->findByPk('6')
+#3 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('6')
+#4 [internal function]: SecRequireController->actionView('6')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#17 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/html/sdl/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=6
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/10 19:54:11 [error] [php] Undefined variable: data (/var/www/html/sdl/protected/views/secRequire/view.php:29)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(56): SecRequireController->render()
+#3 unknown(0): SecRequireController->actionView()
+#4 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=4
+in /var/www/html/sdl/protected/views/secRequire/view.php (29)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (56)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:11:18 [error] [exception.CException] exception 'CException' with message 'Property "Project._projectlist" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('_projectlist')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('_projectlist')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1905): CHtml::resolveValue(Object(Project), '_projectlist')
+#3 /var/www/html/yii/framework/web/widgets/CActiveForm.php(879): CHtml::activeCheckBoxList(Object(Project), '_projectlist', Array, Array)
+#4 /var/www/html/sdl/protected/views/project/_form.php(37): CActiveForm->checkBoxList(Object(Project), '_projectlist', Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#8 /var/www/html/sdl/protected/views/project/update.php(21): CController->renderPartial('_form', Array)
+#9 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#13 /var/www/html/sdl/protected/controllers/ProjectController.php(127): CController->render('update', Array)
+#14 [internal function]: ProjectController->actionUpdate('45')
+#15 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#17 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#26 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/update')
+#27 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /var/www/html/sdl/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sdl/index.php?r=project/update&id=45
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=project/view&id=45
+---
+2014/11/10 20:12:02 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:12:12 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'User list cannot be null' in /var/www/html/sdl/protected/models/Project.php:160
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1126): Project->afterSave()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#2 /var/www/html/sdl/protected/controllers/ProjectController.php(121): CActiveRecord->save()
+#3 [internal function]: ProjectController->actionUpdate('45')
+#4 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/update')
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sdl/index.php?r=project/update&id=45
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=project/update&id=45
+---
+2014/11/10 20:12:22 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:16:31 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:17:13 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:20:15 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:20:58 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:21:20 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:21:20 [error] [exception.CException] exception 'CException' with message 'Property "Project.steps" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('steps')
+#1 /var/www/html/sdl/protected/models/Project.php(167): CActiveRecord->__get('steps')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1126): Project->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#4 /var/www/html/sdl/protected/controllers/ProjectController.php(122): CActiveRecord->save()
+#5 [internal function]: ProjectController->actionUpdate('45')
+#6 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/update')
+#18 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/html/sdl/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/sdl/index.php?r=project/update&id=45
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=project/update&id=45
+---
+2014/11/10 20:21:28 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:21:37 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:22:00 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:22:48 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:27:00 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:28:01 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:35:27 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:35:33 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:35:34 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:36:09 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:36:19 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:36:27 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:37:31 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:37:32 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:37:41 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:38:36 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:38:52 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:38:53 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:39:22 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:39:23 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:39:30 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:40:47 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:43:04 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:43:20 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:43:28 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:44:00 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:44:45 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:45:17 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:45:17 [error] [php] Undefined variable: hello (/var/www/html/sdl/protected/models/Project.php:169)
+Stack trace:
+#0 /var/www/html/sdl/protected/controllers/ProjectController.php(122): Project->save()
+#1 unknown(0): ProjectController->actionUpdate()
+#2 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): ProjectController->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): ProjectController->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): ProjectController->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): ProjectController->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=project/update&id=45
+in /var/www/html/sdl/protected/models/Project.php (169)
+in /var/www/html/sdl/protected/controllers/ProjectController.php (122)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:45:29 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:45:56 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:46:00 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:47:15 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:47:36 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:47:42 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:50:17 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:51:15 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:51:18 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:51:32 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:52:42 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:52:45 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:52:58 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:53:41 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:54:14 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:54:25 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:54:48 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:55:00 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:58:50 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:59:06 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 20:59:06 [error] [php] Undefined variable: number (/var/www/html/sdl/protected/models/SecRequire.php:39)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(806): Project->update()
+#1 /var/www/html/sdl/protected/controllers/ProjectController.php(122): Project->save()
+#2 unknown(0): ProjectController->actionUpdate()
+#3 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): ProjectController->runAction()
+#7 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): ProjectController->filterAccessControl()
+#10 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/yii/framework/web/CController.php(265): ProjectController->runActionWithFilters()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(282): ProjectController->run()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=project/update&id=44
+in /var/www/html/sdl/protected/models/SecRequire.php (39)
+in /var/www/html/sdl/protected/models/Project.php (172)
+in /var/www/html/sdl/protected/controllers/ProjectController.php (122)
+2014/11/10 21:00:38 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/10 21:01:02 [warning] [application] Failed to set unsafe attribute "_userlist" of "Project".
+in /var/www/html/sdl/protected/controllers/ProjectController.php (116)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 02:55:27 [error] [exception.CException] exception 'CException' with message 'SecRequireController contains improperly nested widget tags in its view "/var/www/html/sdl/protected/views/secRequire/_form.php". A CActiveForm widget does not have an endWidget() call.' in /var/www/html/yii/framework/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#1 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#6 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#18 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/html/sdl/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/11 04:35:08 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 04:35:17 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 04:35:22 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 04:35:50 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 04:36:18 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 04:40:53 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 05:49:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdlprocess.Upload' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Upload`.
+in /var/www/html/sdl/protected/controllers/UploadController.php (6)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 05:49:02 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Upload" for active record class "Upload" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Upload))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/sdl/protected/controllers/UploadController.php(6): CActiveRecord->__construct()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UploadController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=upload/create
+---
+2014/11/11 05:51:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdlprocess.Upload' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Upload`.
+in /var/www/html/sdl/protected/controllers/UploadController.php (6)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 05:51:26 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Upload" for active record class "Upload" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Upload))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/sdl/protected/controllers/UploadController.php(6): CActiveRecord->__construct()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UploadController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=upload/create
+---
+2014/11/11 05:51:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdlprocess.Upload' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Upload`.
+in /var/www/html/sdl/protected/controllers/UploadController.php (6)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 05:51:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Upload" for active record class "Upload" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Upload))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/sdl/protected/controllers/UploadController.php(6): CActiveRecord->__construct()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UploadController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('upload/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=upload/create
+---
+2014/11/11 05:57:29 [error] [exception.CException] exception 'CException' with message 'SecRequireController contains improperly nested widget tags in its view "/var/www/html/sdl/protected/views/secRequire/_form.php". A CActiveForm widget does not have an endWidget() call.' in /var/www/html/yii/framework/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#1 /var/www/html/sdl/protected/views/secRequire/create.php(18): CController->renderPartial('_form', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#6 /var/www/html/sdl/protected/controllers/SecRequireController.php(79): CController->render('create', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#8 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#18 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/html/sdl/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
+2014/11/11 05:58:28 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 05:59:31 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:02:20 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:05:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('upload')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/uplo...')
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/upload
+---
+2014/11/11 06:06:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdlprocess.Upload' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Upload`.
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (84)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:06:00 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Upload" for active record class "Upload" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Upload))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(84): CActiveRecord->__construct()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionUpload()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('upload')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/uplo...')
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/upload
+---
+2014/11/11 06:06:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdlprocess.Upload' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Upload`.
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (84)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:06:53 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Upload" for active record class "Upload" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Upload))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/sdl/protected/controllers/SecRequireController.php(84): CActiveRecord->__construct()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionUpload()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('upload')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/uplo...')
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/upload
+---
+2014/11/11 06:39:56 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (72)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:43:19 [warning] [application] Failed to set unsafe attribute "image" of "SecRequire".
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (77)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 06:43:19 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire.image" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('image', '2980-')
+#1 /var/www/html/sdl/protected/controllers/SecRequireController.php(80): CActiveRecord->__set('image', '2980-')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#13 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/html/sdl/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/11 06:44:00 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire.image" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('image', 'tumblr_n0scoogo...')
+#1 /var/www/html/yii/framework/base/CModel.php(472): CActiveRecord->__set('image', 'tumblr_n0scoogo...')
+#2 /var/www/html/yii/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/html/sdl/protected/controllers/SecRequireController.php(77): CActiveRecord->__set('attributes', Array)
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/11 06:44:30 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire.image" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('image', 'tumblr_n0scoogo...')
+#1 /var/www/html/yii/framework/base/CModel.php(472): CActiveRecord->__set('image', 'tumblr_n0scoogo...')
+#2 /var/www/html/yii/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/html/sdl/protected/controllers/SecRequireController.php(77): CActiveRecord->__set('attributes', Array)
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/11 06:47:33 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire.image" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('image', 'tumblr_n0scoogo...')
+#1 /var/www/html/yii/framework/base/CModel.php(472): CActiveRecord->__set('image', 'tumblr_n0scoogo...')
+#2 /var/www/html/yii/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/html/sdl/protected/controllers/SecRequireController.php(77): CActiveRecord->__set('attributes', Array)
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/11 06:47:36 [error] [exception.CException] exception 'CException' with message 'Property "SecRequire.image" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('image', 'tumblr_n0scoogo...')
+#1 /var/www/html/yii/framework/base/CModel.php(472): CActiveRecord->__set('image', 'tumblr_n0scoogo...')
+#2 /var/www/html/yii/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /var/www/html/sdl/protected/controllers/SecRequireController.php(77): CActiveRecord->__set('attributes', Array)
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/crea...')
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/sdl/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/create
+---
+2014/11/11 07:05:52 [error] [php] Undefined variable: IMG_1325.JPG (/var/www/html/sdl/protected/controllers/SecRequireController.php:80)
+Stack trace:
+#0 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (80)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 07:13:06 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /var/www/html/yii/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2255): tag()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1676): activeInputField()
+#3 /var/www/html/sdl/protected/views/secRequire/_form.php(53): activeFileField()
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#7 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#12 /var/www/html/sdl/protected/controllers/SecRequireController.php(92): SecRequireController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (53)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (92)
+2014/11/11 07:13:44 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /var/www/html/yii/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2255): tag()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1676): activeInputField()
+#3 /var/www/html/sdl/protected/views/secRequire/_form.php(53): activeFileField()
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#7 /var/www/html/sdl/protected/views/secRequire/create.php(18): SecRequireController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): SecRequireController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(869): SecRequireController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(782): SecRequireController->renderPartial()
+#12 /var/www/html/sdl/protected/controllers/SecRequireController.php(92): SecRequireController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/views/secRequire/_form.php (53)
+in /var/www/html/sdl/protected/views/secRequire/create.php (18)
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (92)
+2014/11/11 07:32:06 [error] [php] move_uploaded_file(/var/www/html/sdl/protected/../doc/5624.doc): failed to open stream: No such file or directory (/var/www/html/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#1 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#3 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (85)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 07:32:34 [error] [php] move_uploaded_file(/var/www/html/sdl/protected/../doc/2785.doc): failed to open stream: Permission denied (/var/www/html/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SecRequireController->actionCreate()
+#1 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): SecRequireController->runAction()
+#3 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): SecRequireController->filterAccessControl()
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(265): SecRequireController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(282): SecRequireController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/html/sdl/index.php(13): CWebApplication->run()
+REQUEST_URI=/sdl/index.php?r=secRequire/create
+in /var/www/html/sdl/protected/controllers/SecRequireController.php (85)
+in /var/www/html/sdl/index.php (13)
+2014/11/11 07:47:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/sdl/protected/controllers/SecRequireController.php:175
+Stack trace:
+#0 /var/www/html/sdl/protected/controllers/SecRequireController.php(55): SecRequireController->loadModel('15')
+#1 [internal function]: SecRequireController->actionView('15')
+#2 /var/www/html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SecRequireController), Array)
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SecRequireController), Object(ReflectionMethod), Array)
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secRequire/view')
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sdl/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sdl/index.php?r=secRequire/view&id=15
+HTTP_REFERER=http://192.168.21.201/sdl/index.php?r=secRequire/index
+---
