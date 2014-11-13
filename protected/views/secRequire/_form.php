@@ -28,12 +28,12 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'requirecontent'); ?>
-		<?php echo $form->textArea($model,'requirecontent',array('rows'=>6, 'cols'=>50)); ?>
+		<?php //echo $form->textArea($model,'requirecontent',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'requirecontent'); ?>
 	</div>
 
 	<div class="row">
-        <?php echo $form->labelEx($model,'file'); ?>
+        <?php //echo $form->labelEx($model,'file'); ?>
         <?php echo CHtml::activeFileField($model, 'file'); ?> 
         <?php echo $form->error($model,'file'); ?>
 	</div>

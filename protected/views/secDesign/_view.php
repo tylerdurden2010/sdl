@@ -12,9 +12,11 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('designname')); ?>:</b>
 	<?php echo CHtml::encode($data->designname); ?>
 	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('threatmodel')); ?>:</b>
 	<?php echo '<img src='."{$data->threatmodel}".' width=500px height=500px>'; ?>
+	<br />
+	<b>
+	</b>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('attacktree')); ?>:</b>

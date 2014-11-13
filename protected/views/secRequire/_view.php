@@ -14,7 +14,9 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('requirecontent')); ?>:</b>
-	<?php echo CHtml::encode($data->requirecontent); ?>
+	
+	<?php echo '<a href='."{$data->file} >".'Download file</a>'; ?>
+
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('requirefinish')); ?>:</b>
