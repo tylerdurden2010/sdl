@@ -1,38 +1,28 @@
 <?php
 
 /**
- * This is the model class for table "Design".
+ * This is the model class for table "Implement".
  *
- * The followings are the available columns in table 'Design':
- * @property integer $designid
- * @property string $designname
- * @property string $threatmodel
- * @property string $attacktree
- * @property string $createtime
- * @property string $updatetime
- * @property string $finishiedtime
+ * The followings are the available columns in table 'Implement':
+ * @property integer $implementid
+ * @property string $implementname
  * @property integer $projectid
- * @property integer $designfinishied
+ * @property string $implementreport
+ * @property string $create_time
+ * @property string $update_time
+ * @property string $finishied_time
+ * @property integer $implementfinishied
+ * @property string $surveyurl
  */
-class SecDesign extends CActiveRecord
+class Implement extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'Design';
+		return 'Implement';
 	}
-
-	public function getAllProjects()
-	{
-		$haha = Project::model()->findAll();
-
-		$projectlist = CHtml::listData($haha,'projectid','projectname');
-
-		return $projectlist;
-	}
-
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -42,12 +32,12 @@ class SecDesign extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('projectid, designfinishied', 'numerical', 'integerOnly'=>true),
-			array('designname, threatmodel, attacktree', 'length', 'max'=>255),
-			array('createtime, updatetime, finishiedtime', 'safe'),
+			array('projectid, implementfinishied', 'numerical', 'integerOnly'=>true),
+			array('implementname, implementreport, surveyurl', 'length', 'max'=>255),
+			array('create_time, update_time, finishied_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('designid, designname, threatmodel, attacktree, createtime, updatetime, finishiedtime, projectid, designfinishied', 'safe', 'on'=>'search'),
+			array('implementid, implementname, projectid, implementreport, create_time, update_time, finishied_time, implementfinishied, surveyurl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,21 +52,31 @@ class SecDesign extends CActiveRecord
 		);
 	}
 
+	public function getAllProjects()
+	{
+		$haha = Project::model()->findAll();
+
+		$projectlist = CHtml::listData($haha,'projectid','projectname');
+
+		return $projectlist;
+	}
+
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
 	public function attributeLabels()
 	{
 		return array(
-			'designid' => 'Designid',
-			'designname' => 'Designname',
-			'threatmodel' => 'Threatmodel',
-			'attacktree' => 'Attacktree',
-			'createtime' => 'Createtime',
-			'updatetime' => 'Updatetime',
-			'finishiedtime' => 'Finishiedtime',
+			'implementid' => 'Implementid',
+			'implementname' => 'Implementname',
 			'projectid' => 'Projectid',
-			'designfinishied' => 'Designfinishied',
+			'implementreport' => 'Implementreport',
+			'create_time' => 'Create Time',
+			'update_time' => 'Update Time',
+			'finishied_time' => 'Finishied Time',
+			'implementfinishied' => 'Implementfinishied',
+			'surveyurl' => 'Surveyurl',
 		);
 	}
 
@@ -98,15 +98,15 @@ class SecDesign extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('designid',$this->designid);
-		$criteria->compare('designname',$this->designname,true);
-		$criteria->compare('threatmodel',$this->threatmodel,true);
-		$criteria->compare('attacktree',$this->attacktree,true);
-		$criteria->compare('createtime',$this->createtime,true);
-		$criteria->compare('updatetime',$this->updatetime,true);
-		$criteria->compare('finishiedtime',$this->finishiedtime,true);
+		$criteria->compare('implementid',$this->implementid);
+		$criteria->compare('implementname',$this->implementname,true);
 		$criteria->compare('projectid',$this->projectid);
-		$criteria->compare('designfinishied',$this->designfinishied);
+		$criteria->compare('implementreport',$this->implementreport,true);
+		$criteria->compare('create_time',$this->create_time,true);
+		$criteria->compare('update_time',$this->update_time,true);
+		$criteria->compare('finishied_time',$this->finishied_time,true);
+		$criteria->compare('implementfinishied',$this->implementfinishied);
+		$criteria->compare('surveyurl',$this->surveyurl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -117,7 +117,7 @@ class SecDesign extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return SecDesign the static model class
+	 * @return Implement the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

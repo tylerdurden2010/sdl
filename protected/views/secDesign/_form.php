@@ -58,10 +58,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'projectid'); ?>
-		<?php echo $form->textField($model,'projectid'); ?>
+		<?php echo $form->RadioButtonList($model,'projectid',$model->getAllProjects(),array('uncheckValue'=>NULL)); ?>
 		<?php echo $form->error($model,'projectid'); ?>
 	</div>
-
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'designfinishied'); ?>
 		<?php echo $form->textField($model,'designfinishied'); ?>
