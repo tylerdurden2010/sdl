@@ -33,7 +33,7 @@
 				array('label'=>'Require','url'=>array('/secRequire/index')),
 				array('label'=>'Security Desgin','url'=>array('/secDesign/index')),
 				array('label'=>'Implement','url'=>array('/secImplement/index')),
-				array(),
+				array('label'=>'Security Test','url'=>array('/secTest/index')),
 				array(),
 				array(),
 				// array('label'=>'Home', 'url'=>array('/site/index')),

@@ -28,6 +28,10 @@
         <?php echo $form->error($model,'interfaceurl'); ?>
     </div>
 
+    <div class="row">
+        <?php $modelforbiddenfunctions=Implement::model()->findByPk($model->implementid); echo '<b>Forbidden functions: '.$modelforbiddenfunctions->forbiddenfunctions.'</b>';?>
+    </div>
+
 
    
 

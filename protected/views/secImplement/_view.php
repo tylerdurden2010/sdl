@@ -21,6 +21,10 @@
 	<?php echo CHtml::encode($data->implementreport); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('forbiddenfunctions')); ?>:</b>
+	<?php echo CHtml::encode($data->forbiddenfunctions); ?>
+	<br />
+
 <!-- 	<b><?php //echo CHtml::encode($data->getAttributeLabel('create_time')); ?>:</b>
 	<?php// echo CHtml::encode($data->create_time); ?>
 	<br />

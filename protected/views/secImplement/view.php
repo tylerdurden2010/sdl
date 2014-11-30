@@ -36,5 +36,6 @@ $this->menu=array(
 			'type'=>'raw',
 			'value'=>'<a href='.$model->surveyurl.'>Apply Form</a>'
 		),
+		'forbiddenfunctions',
 	),
 )); ?>
